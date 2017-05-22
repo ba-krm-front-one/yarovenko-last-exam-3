@@ -1,0 +1,169 @@
+.navigation-block-same-styles{
+  color: #ffffff;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.ha-header {
+  margin: 0 auto;
+  height: 72px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    width: 54px;
+    height: 72px;
+    align-self: center;
+  }
+}
+
+.navigation-block {
+  width: 570px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  padding: 0;
+
+  &__link {
+    width: 113px;
+    height: 43px;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    @extend .navigation-block-same-styles;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      border-left: none;
+      border-right: none;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.4);
+      transition-duration: 0.3s;
+      transition-property: color;
+    }
+
+  }
+
+  &__item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    align-self: center;
+    @extend .navigation-block-same-styles;
+  }
+
+}
+
+//********************** navbar Humburger****************************//
+@media screen and (max-width: 1000px) {
+  .navigation-block {
+    all: inherit;
+  }
+  .navigation-block__item {
+    display: block;
+  }
+  .b-a {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 8px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  .menu-collapsed {
+    transition: all .25s;
+    top: 10px;
+    left: 9px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    cursor: pointer;
+    ul {
+      transition: all 0s;
+      position: absolute;
+      left: -9000px;
+    }
+  }
+  .bar {
+    @extend .b-a;
+    position: absolute;
+    right: 20px;
+    top: 65px;
+    &:before {
+      @extend .b-a;
+      top: -15px;
+    }
+    &:after {
+      @extend .b-a;
+      top: 15px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .b-a-expanded {
+    transition: all .25s;
+    top: -0px;
+  }
+  .menu-expanded {
+    position: absolute;
+    transition: all .25s;
+    text-align: center;
+    line-height: 15px;
+    height: 340px;
+    width: 100%;
+    border-radius: 0px;
+    padding-top: 95px;
+    top: 10px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    ul {
+      transition: all 0s;
+      position: relative;
+      left: 0;
+      z-index: 2;
+      text-align: center;
+    }
+    a {
+      transition: all .15s;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      width: 100%;
+      justify-content: space-around;
+      text-align: center;
+      &:hover {
+        background-color: rgba(white, .4);
+        transition: all .35s;
+        letter-spacing: 2px;
+        color: #333;
+        border: 1px solid rgba(255, 255, 255, .15);
+      }
+    }
+    .bar {
+      background-color: transparent;
+      transition: all .25s;
+      &:before {
+        @extend .b-a-expanded;
+        transform: rotate(45deg);
+      }
+      &:after {
+        @extend .b-a-expanded;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+//******************************************************************//

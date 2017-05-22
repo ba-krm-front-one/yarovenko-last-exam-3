@@ -1,0 +1,19 @@
+.fa-header-meet{
+  margin: 0 auto;
+  min-height: 242px;
+  text-align: center;
+  &__icon{
+    width: 60px;
+    height: 60px;
+    margin: 54px auto 34px;
+ }
+  &__title{
+    width: 100%;
+    min-height: 26px;
+    color: #665f60;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
