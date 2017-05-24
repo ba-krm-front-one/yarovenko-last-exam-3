@@ -65,10 +65,12 @@
   margin-right: 30px;
   &__person{
     margin: 0 auto;
-    margin-top:-5px;
+   // margin-top:-5px;
+    border-radius: 50%;
     max-width: 239px;
     height: 237px;
     z-index: 1000;
+    border:10px solid #ebebeb;
   }
   &__socialnet{
     margin: 0 auto;

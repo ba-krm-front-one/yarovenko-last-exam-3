@@ -66,10 +66,10 @@
   margin-right: 30px; }
   .carousel-cell-team__person {
     margin: 0 auto;
-    margin-top: -5px;
     max-width: 239px;
     height: 237px;
-    z-index: 1000; }
+    z-index: 1000;
+    border: 20px solid #ebebeb; }
   .carousel-cell-team__socialnet {
     margin: 0 auto;
     width: 100%;
