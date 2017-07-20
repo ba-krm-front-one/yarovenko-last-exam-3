@@ -1,0 +1,12 @@
+@import "header.scss";
+@import "main_content.scss";
+
+.ha-header-block {
+  margin: 0 auto;
+  background: url(../image/header-bg.png) center no-repeat;
+  background-size: cover;
+  background-color: #a8a3be;
+  min-height: 1070px;
+  padding-top: 36px;
+ }
+

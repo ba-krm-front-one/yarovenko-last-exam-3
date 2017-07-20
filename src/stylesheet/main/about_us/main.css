@@ -1,0 +1,85 @@
+.fa-main-container__about-us {
+  margin: 0 auto;
+  padding-top: 124px;
+  max-width: 1180px;
+  min-height: 681px;
+  padding-right: 34px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.fa-about-us-preview {
+  background: url(../image/about_us-img.png) center no-repeat;
+  background-size: cover;
+  height: 555px;
+  width: 400px;
+  display: flex;
+  flex-direction: column; }
+  .fa-about-us-preview__icon {
+    width: 50px;
+    height: 54px;
+    margin-top: 77px;
+    align-self: center; }
+  .fa-about-us-preview__title {
+    margin: 44px auto 0;
+    width: 180px;
+    height: 26px;
+    color: #fefbfc;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center; }
+
+.fa-about-us-description {
+  max-width: 623px;
+  min-width: 300px;
+  margin-left: 10px;
+  min-height: 379px;
+  max-height: 555px;
+  margin-top: 78px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 100px; }
+  .fa-about-us-description__text {
+    color: #665f60;
+    font-family: "PT Sans";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 20px; }
+    .fa-about-us-description__text--bold {
+      font-weight: 700; }
+    .fa-about-us-description__text--italic {
+      font-style: italic; }
+  .fa-about-us-description__button {
+    color: #7d7a7c;
+    font-family: "PT Sans";
+    font-size: 20px;
+    font-weight: 400;
+    align-self: center;
+    width: 195px;
+    min-height: 50px;
+    border: 1px solid #7d7a7c;
+    background-color: transparent;
+    font-style: italic; }
+    .fa-about-us-description__button:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+      cursor: pointer; }
+    .fa-about-us-description__button:active {
+      background-color: #c0bed8;
+      margin-bottom: 5px;
+      color: #ffffff;
+      font-weight: 400;
+      transition-duration: 0.15s;
+      border: none; }
+
+@media screen and (max-width: 792px) {
+  .fa-main-container__about-us {
+    flex-wrap: wrap;
+    justify-content: center;
+    transition-property: justify-content;
+    transition-duration: 1.5s; }
+  .fa-about-us-description__text {
+    text-align: justify; } }

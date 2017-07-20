@@ -1,0 +1,63 @@
+@import "header/main.scss";
+@import "main/main.scss";
+@import "footer/main.scss";
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+html {
+  height: 5571px;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-height: 4707px;
+  width: 100%;
+  min-width: 400px;
+  position: relative;
+
+}
+
+.scroll-up{
+  width: 84px;
+  height: 84px;
+  background-color: rgba(159,154,207,0.5);
+  padding: 31px 24px;
+   position: fixed;
+  bottom: 231px;
+  right: 129px;
+  display:none;
+  z-index: 2;
+  &__icon{
+    width: 36px;
+    height: 21px;
+  }
+  &:hover{
+    background-color: rgba(159,154,207,0.6);
+    transform: scale(1.1);
+    box-shadow: 1px 1px 30px rgba(255,255,255,0.7);
+  }
+
+}
+@media screen and (max-width: 1000px) {
+.scroll-up{
+  right: 1px;
+  z-index: 2;
+  background-color: rgba(159,154,207,0.9);
+}
+}
